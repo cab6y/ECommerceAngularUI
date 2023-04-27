@@ -1,0 +1,11 @@
+<a href="/createAddress">Create Address</a>
+<div class="form-group" style="margin-left:10%;" *ngFor="let addresses of address; index as i">
+    <div class="card" style="width: 18rem;">
+  
+        <div class="card-body">
+          <h5 class="card-title">{{addresses.addressTitle}}</h5>
+          <p class="card-text">{{addresses.city}} - {{addresses.address}}</p>
+          <a href="#" id="{{addresses.id}}" (click)="CreateOrder(addresses.id)" class="btn btn-primary">Seç</a>
+        </div>
+      </div>
+</div>
